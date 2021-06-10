@@ -1,12 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import {
-  AtSymbolIcon,
-  MenuIcon,
-  MoonIcon,
-  SunIcon,
-  XIcon,
-} from "@heroicons/react/outline";
+import { MenuIcon, MoonIcon, SunIcon, XIcon } from "@heroicons/react/outline";
 import { useTheme } from "next-themes";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
