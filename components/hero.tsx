@@ -16,7 +16,6 @@ export default function Hero() {
   const { t } = useTranslation("common");
 
   const { locale } = useRouter();
-  console.log(locale);
   const navigation = [
     { name: t("about"), href: "#about" },
     { name: t("skills"), href: "#skills" },

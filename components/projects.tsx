@@ -22,7 +22,7 @@ export default function Projects() {
       title: t("your_next_project"),
       href: "mailto:alexander.may@hey.com",
       technologies: [t("any")],
-      description: t("your_next_project_desc"),
+      description: "",
       imageUrl: "/pitching.png",
       buttonText: t("message_me"),
     },
@@ -47,7 +47,7 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-100 transform hover:scale-105 dark:border dark:border-white">
+              className="flex flex-col rounded-lg shadow-lg overflow-hidden transition duration-100 transform hover:scale-105 dark:border bg-white dark:border-white">
               <div className="flex-shrink-0 relative w-full h-48">
                 <Image
                   layout="fill"
@@ -56,7 +56,7 @@ export default function Projects() {
                   alt={`Screenshot of ${project.title}`}
                 />
               </div>
-              <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div className="flex-1 p-6 flex flex-col justify-between">
                 <div className="flex-1">
                   <div className="space-x-2">
                     {project.technologies.map((technology) => (
